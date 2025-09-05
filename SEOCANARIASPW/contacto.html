@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto · SEO CANARIAS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans bg-white">
+
+  <header class="w-full bg-white shadow-sm">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="logo font-bold">SEO CANARIAS</div>
+      <a href="index.html" class="text-sm">Volver</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-6">Contacto</h1>
+    <p class="mb-6">Rellena el formulario o escríbenos por correo/WhatsApp.</p>
+
+    <form id="contactForm" class="max-w-2xl space-y-4">
+      <div>
+        <label class="block text-sm">Nombre</label>
+        <input required name="name" class="input" placeholder="Tu nombre" />
+      </div>
+      <div>
+        <label class="block text-sm">Correo</label>
+        <input required type="email" name="email" class="input" placeholder="tu@correo.com" />
+      </div>
+      <div>
+        <label class="block text-sm">Mensaje</label>
+        <textarea required name="message" class="input h-32" placeholder="Cuéntanos sobre tu negocio"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="bg-yellow-400 px-6 py-2 rounded-md font-semibold">Enviar</button>
+      </div>
+    </form>
+    <div id="sentMsg" class="hidden mt-4 p-4 bg-green-100 rounded">Mensaje enviado (simulado).</div>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    © 2025 SEO CANARIAS
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
